@@ -1,6 +1,6 @@
 // parent.js
 import React, { useState } from 'react';
-import LoginForm from './LoginForm';
+import LoginForm from './child';
 
 const ParentComponent = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -11,7 +11,7 @@ const ParentComponent = () => {
 
   return (
     <div>
-      <h1>Welcome to My App</h1>
+
       {isLoggedIn ? (
         <p>You are logged in!</p>
       ) : (
