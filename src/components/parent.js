@@ -12,7 +12,10 @@ const ParentComponent = () => {
   return (
     <div>
       {isLoggedIn ? (
-        <h1>Parent Component</h1>  
+        <div>
+        <h1>Parent Component</h1>
+        <p>You are logged in!</p>  
+      </div> 
       ) : (
         <LoginForm onLogin={handleLogin} />  
       )}
