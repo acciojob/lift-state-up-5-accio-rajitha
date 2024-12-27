@@ -7,8 +7,8 @@ const LoginForm = ({ onLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder for validation logic (optional)
-    onLogin();  // Trigger the login function passed as a prop when the form is submitted
+    
+    onLogin();  
   };
 
   return (

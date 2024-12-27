@@ -1,21 +1,19 @@
 // parent.js
 import React, { useState } from "react";
-import LoginForm from "./child";  // Importing the LoginForm component
+import LoginForm from "./child"; 
 
 const ParentComponent = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
-    setIsLoggedIn(true);  // Set login state to true when the user logs in
+    setIsLoggedIn(true);  
   };
 
   return (
     <div>
+      <h1>Parent Component</h1>
       {isLoggedIn ? (
-        <div>
-        <h1>Parent Component</h1>
         <p>You are logged in!</p>  
-      </div> 
       ) : (
         <LoginForm onLogin={handleLogin} />  
       )}
